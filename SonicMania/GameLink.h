@@ -1569,7 +1569,7 @@ typedef struct {
     // Sprite Animations & Frames
     uint16 (*LoadSpriteAnimation)(const char *filePath, uint8 scope);
     uint16 (*CreateSpriteAnimation)(const char *filePath, uint32 frameCount, uint32 listCount, uint8 scope);
-    void (*SetSpriteAnimation)(uint16 aniFrames, uint16 listID, Animator *animator, bool32 forceApply, int16 frameID);
+    void (*SetSpriteAnimation)(uint16 aniFrames, uint16 listID, Animator *animator, bool32 forceApply, int32 frameID);
     void (*EditSpriteAnimation)(uint16 aniFrames, uint16 listID, const char *name, int32 frameOffset, uint16 frameCount, int16 speed, uint8 loopIndex,
                                 uint8 rotationStyle);
     void (*SetSpriteString)(uint16 aniFrames, uint16 listID, String *string);
@@ -1628,7 +1628,7 @@ typedef struct {
     int32 (*PlaySfx)(uint16 sfx, int32 loopPoint, int32 priority);
     void (*StopSfx)(uint16 sfx);
 #if RETRO_REV0U
-    void (*StopAllSfx)(void);
+    //void (*StopAllSfx)(void);
 #endif
     int32 (*PlayStream)(const char *filename, uint32 channel, uint32 startPos, uint32 loopPoint, bool32 loadASync);
     void (*SetChannelAttributes)(uint8 channel, float volume, float pan, float speed);
