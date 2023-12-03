@@ -37,7 +37,7 @@
 #endif
 
 #ifndef RETRO_USE_MOD_LOADER
-#define RETRO_USE_MOD_LOADER (1)
+#define RETRO_USE_MOD_LOADER (0)
 #endif
 
 #ifndef RETRO_MOD_LOADER_VER
