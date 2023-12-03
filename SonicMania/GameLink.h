@@ -1642,7 +1642,7 @@ typedef struct {
     int32 (*PlaySfx)(uint16 sfx, int32 loopPoint, int32 priority);
     void (*StopSfx)(uint16 sfx);
 #if RETRO_REV0U
-    void (*StopAllSfx)(void);
+    //void (*StopAllSfx)(void);
 #endif
     int32 (*PlayStream)(const char *filename, uint32 channel, uint32 startPos, uint32 loopPoint, bool32 loadASync);
     void (*SetChannelAttributes)(uint8 channel, float volume, float pan, float speed);
